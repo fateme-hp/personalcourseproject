@@ -5,12 +5,13 @@
     text-decoration: none;
     list-style: none;
     color: inherit;
+    box-sizing: border-box;
     font: 13PX helvetica;
 }
 
 /* general css */
 body{
-    background: rgb(246, 246, 246);
+    background: #F9F9FF;
 }
 .container{
     max-width: 1280px;
@@ -33,7 +34,7 @@ header .container{
     header nav li {
         display: inline-flex;
         position: relative;
-        margin: 5px;
+        margin: 3px;
     }
      header nav li > a {
         padding: 10px;
@@ -48,15 +49,203 @@ header .container{
                 position: absolute;
                 top:150%;
                 right:0;
-                display: none;
-                box-shadow: 0px 0px 18px -5px #8490ff ;
+              
+                box-shadow: 0px 0px 16px -3px #8490ff85 ;
+
+                visibility: hidden;
+                opacity: 0;
+
+                transition-delay: 0.2s;
+                transition-property: all;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
+
         }
         nav li ul a {
                 min-width: max-content;
+                width: 180px;
                 padding: 10px 20px;
         }
         header nav ul li:hover ul  {
             display: flex;
             flex-direction: column;
+
+            visibility: visible;
+                opacity: 1;
+
         }
 /* header style end  */
+
+/*intro style START */
+    
+.intro .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 0;
+}
+#intro-left-col h2{
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+#intro-left-col p {
+    width: 70%;
+    font-size: 15px;
+    color: #979696;
+    line-height: 24px;
+}
+#intro-left-col span{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#intro-left-col .about-btn {
+    display: inline-flex;
+    margin-top: 20px;
+    padding: 15px 23px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    background: linear-gradient(90deg, #8490ff, #62bdfc) ;
+
+}
+
+#intro-left-col .about-btn:hover{
+    box-shadow: -2px 13px 17px -3px #8490ff85 ;
+
+}
+
+
+/* intro style end  */
+/*ABOUT style START  */
+.about{
+    background: #fff;
+}
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+#about-right-col h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+#about-right-col p {
+    width: 75%;
+    font-size: 15px;
+    color: #979696;
+    line-height: 24px;
+}
+#about-right-col span{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+#about-right-col .about-btn {
+    display: inline-flex;
+    margin-top: 20px;
+    padding: 15px 23px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    background: linear-gradient(90deg, #8490ff, #62bdfc) ;
+
+}
+
+#about-right-col .about-btn:hover{
+    box-shadow: -2px 13px 17px -3px #8490ff85 ;
+
+}
+.about img {
+   margin-right: 10%;
+}
+/* ABOUT style end  */
+
+/* service-offers style start */
+.service-offers{
+    background: #fff;
+}
+.service-offers .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.service-offers h3{
+    font-size: 35px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+
+.service-offers h4{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.service-offers p {
+    width: 75%;
+    font-size: 15px;
+    color: #979696;
+    line-height: 24px;
+}
+.service-offers .top-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service-offers .bottom-row{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.service-offers .bottom-row div {
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-offers h4:hover {
+    color:#8490ff ;
+}
+
+
+/*service-offers style end  */
+/* stats style start */
+.stats{
+    background: linear-gradient(90deg, #8490ff, #62bdfc) ;
+    color: #fff;
+    height: 300px;
+}
+.stats .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.stats h5{
+    font-size: 18px;
+}
+
+.stats span{
+    font-size:45px;
+    font-weight: bold;
+}
+.stats .container div {
+    text-align: center;
+}
+
+/*stats style end  */
