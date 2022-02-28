@@ -74,6 +74,15 @@ header .container{
                 opacity: 1;
 
         }
+
+        nav ul li ul li ul {
+            position: absolute;
+            top:0;
+            right:100%;
+        }
+        a>i {
+            padding-left: 10px;
+        }
 /* header style end  */
 
 /*intro style START */
